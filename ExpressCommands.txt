@@ -1,0 +1,22 @@
+Express installation Commands
+
+// install basic express -g is used to install on global  
+
+npm install express -g
+
+// to check express engine installation
+// use node.js command prompt
+
+express -h 
+
+// create basic structure of application we use ejs 
+// command to create -- classifed_site is folder name
+
+express --view=ejs classifed_site
+
+//to install basic modules which is required for development 
+
+npm install
+
+//
+
