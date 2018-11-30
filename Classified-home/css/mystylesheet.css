@@ -1,0 +1,80 @@
+
+      .bs-example{
+       margin-top: 5px;
+       background-color: black;
+     }
+     .btn {
+      background: #F0F8FF;
+      color: black;
+    }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: left;
+      font-family: arial;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: orange;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      border-radius: 15px 50px 30px;
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    .icons{
+      font-size: 50px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .fb{
+      color: #4267B2;
+    }
+
+    .tw{
+      color: #38A1F3;
+    }
+
+    .yb{
+      color: #FF0000
+    }
+
+    .rss{
+      color: #ee802f;
+    }
+
+    .card-border{
+      border: 1px solid green;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .adds{
+      color: pink;
+    }
+
+    .carousel-control{
+      color: red;
+
+    }
+
+    .ftr{
+      margin-top: 30px;
+    }

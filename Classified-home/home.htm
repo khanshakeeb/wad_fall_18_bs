@@ -1,0 +1,829 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClassifiedSite</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/mystylesheet.css">
+
+  </head>
+
+  <body>
+    <div class="bs-example container-fluid">
+      <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">CategoryPages <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">CategoryGrid</a></li>
+                <li class="divider"></li>
+                <li><a href="#">SingleItems</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Other Pages <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Post Your Add</a></li>
+                <li><a href="#">My Ads</a></li>
+                <li><a href="#">Favourite Ads</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Close Account</a></li>
+                <li><a href="#">Settings</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <a href="#"><button class="btn btn-primary btn-lg" style="float: right;"  type="submit" role="button">Sign In</button></a>
+          <a href="#"><button class="btn btn-primary btn-lg" style="float: right; margin-right: 10px;"  type="submit" role="button">Register</button></a>
+        </div>
+      </nav>
+      <div class="row" style="text-align: center; color: white;">
+        <h2 style="margin-bottom: 15px;">Online Selling or Advertising Your Products</h2>
+        <h5 style="margin-bottom: 45px;">Now you may sell or buy anything from mobile phones to properties or even jobs</h5>
+      </div>
+      <div class="row" style="text-align: center; margin-bottom: 50px;">
+        <form class="form-inline">
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="Search" class="sr-only">Search</label>
+            <input type="text" class="form-control input-lg" id="Searchitem" placeholder="Search Here">
+            <input type="text" class="form-control input-lg" id="itemcategory" placeholder="Category">
+            <input type="text" class="form-control input-lg" id="location" placeholder="Location">
+          </div>
+          <button type="submit" class="btn btn-primary mb-2 btn-lg">Seach</button>
+        </form>
+      </div>
+
+      <div class="row" style="text-align: center; color: white;">
+        <h2>Popular Categories</h2>
+      </div>
+      <div class="row" style="text-align: center; color: white; margin-top: 15px; margin-bottom: 45px;">
+        <a href="#"><button type="submit" class="btn btn-primary mb-2 btn-cgy">Computers</button></a>
+        <a href="#"><button type="submit" class="btn btn-primary mb-2">Laptops</button></a>
+        <a href="#"><button type="submit" class="btn btn-primary mb-2">Mobiles</button></a>
+        <a href="#"><button type="submit" class="btn btn-primary mb-2">Cars</button></a>
+        <a href="#"><button type="submit" class="btn btn-primary mb-2">Books</button></a>
+        <a href="#"><button type="submit" class="btn btn-primary mb-2">Jobs</button></a>
+        <a href="#"<button type="submit" class="btn btn-primary mb-2">Properties</button></a>
+      </div>
+
+    </div>
+
+
+    <h2 class="text-center">Trending Items by Categories</h2>
+
+    <div class="container-fluid" style="background: #000; color: #fff;">
+      <h3 style="margin: 10px; color:#fff; margin-top: 20px; margin-bottom: 20px;">Cars</h3>
+      <div id="carousel-example-generic" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+             <!-- Slide -->
+          <div class="item active">
+              <div class="row">
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+              </div>
+          </div>
+             <!-- Slide -->
+          <div class="item">
+              <div class="row">
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+              </div>
+          </div>
+             <!-- Slide -->
+          <div class="item">
+              <div class="row">
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="card">
+                         <img src="images/bmw.jpg" alt="bmw" style="width:100%">
+                         <h1>BMW</h1>
+                         <p class="price">Price: $19.99</p>
+
+                         <i class="fa fa-clock"> Time</i><br><br>
+                         <i class="fa fa-map-marker"> Location</i><br><br>
+                         <i class="fa fa-align-justify">Category</i><br><br>
+                         <p>Descriptions of the prodect goes here.</p>
+                         <p><button>Add to Cart</button></p>
+                       </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="icon-next"></span>
+        </a>
+      </div>
+
+  <h3 style="margin: 10px; color:#fff; margin-top: 20px; margin-bottom: 20px;">Laptops</h3>
+  <div class="row" style="margin-top: 25px; margin-top: 20px;">
+  	<div class="col-md-3 col-sm-6 col-xs-6">
+     <div class="card">
+      <img src="images/laptop.jpg" alt="bmw" style="width:100%">
+      <h1>Lenovo</h1>
+      <p class="price">Price: $15.99</p>
+      <i class="fa fa-clock"> Time</i><br><br>
+      <i class="fa fa-map-marker"> Location</i><br><br>
+      <i class="fa fa-align-justify">Category</i><br><br>
+      <p>Descriptions of the prodect goes here.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+  	<div class="card">
+      <img src="images/laptop.jpg" alt="bmw" style="width:100%">
+      <h1>Lenovo</h1>
+      <p class="price">Price: $15.99</p>
+      <i class="fa fa-clock"> Time</i><br><br>
+      <i class="fa fa-map-marker"> Location</i><br><br>
+      <i class="fa fa-align-justify">Category</i><br><br>
+      <p>Descriptions of the prodect goes here.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+  	<div class="card">
+      <img src="images/laptop.jpg" alt="bmw" style="width:100%">
+      <h1>Lenovo</h1>
+      <p class="price">Price: $15.99</p>
+      <i class="fa fa-clock"> Time</i><br><br>
+      <i class="fa fa-map-marker"> Location</i><br><br>
+      <i class="fa fa-align-justify">Category</i><br><br>
+      <p>Descriptions of the prodect goes here.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+  	<div class="card">
+      <img src="images/laptop.jpg" alt="bmw" style="width:100%">
+      <h1>Lenovo</h1>
+      <p class="price">Price: $15.99</p>
+      <i class="fa fa-clock"> Time</i><br><br>
+      <i class="fa fa-map-marker"> Location</i><br><br>
+      <i class="fa fa-align-justify">Category</i><br><br>
+      <p>Descriptions of the prodect goes here.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  </div>
+
+  <h3 style="margin: 10px; color:#fff; margin-top: 20px; margin-bottom: 20px;">Mobile Phones</h3>
+  <div class="row" style="margin-top: 25px; margin-top: 20px;">
+  	<div class="col-md-3 col-sm-6 col-xs-6">
+     <div class="card">
+      <img src="images/phone.jpg" alt="bmw" style="width:100%">
+      <h1>Vivo</h1>
+      <p class="price">Price: $10.99</p>
+      <i class="fa fa-clock"> Time</i><br><br>
+      <i class="fa fa-map-marker"> Location</i><br><br>
+      <i class="fa fa-align-justify">Category</i><br><br>
+      <p>Descriptions of the prodect goes here.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-6 ">
+  	<div class="card">
+      <img src="images/phone.jpg" alt="bmw" style="width:100%">
+      <h1>Vivo</h1>
+      <p class="price">Price: $10.99</p>
+      <i class="fa fa-clock"> Time</i><br><br>
+      <i class="fa fa-map-marker"> Location</i><br><br>
+      <i class="fa fa-align-justify">Category</i><br><br>
+      <p>Descriptions of the prodect goes here.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+  	<div class="card">
+      <img src="images/phone.jpg" alt="bmw" style="width:100%">
+      <h1>Vivo</h1>
+      <p class="price">Price: $10.99</p>
+      <i class="fa fa-clock"> Time</i><br><br>
+      <i class="fa fa-map-marker"> Location</i><br><br>
+      <i class="fa fa-align-justify">Category</i><br><br>
+      <p>Descriptions of the prodect goes here.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-6">
+  	<div class="card">
+      <img src="images/phone.jpg" alt="bmw" style="width:100%">
+      <h1>Vivo</h1>
+      <p class="price">Price: $10.99</p>
+      <i class="fa fa-clock"> Time</i><br><br>
+      <i class="fa fa-map-marker"> Location</i><br><br>
+      <i class="fa fa-align-justify">Category</i><br><br>
+      <p>Descriptions of the prodect goes here.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-6 card-border">
+      <p class="adds">1365 Ads</p>
+      <h3><i class="fa fa-utensils"></i>Resturants</h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#">Cafe</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Fast Food</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Resturants</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">100</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Pubs</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Food Truck</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Show More</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">4</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6 card-border">
+      <p class="adds">1365 Ads</p>
+      <h3><i class="fa fa-home"></i>Real Estate</h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#">For Rent</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">For Sale</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">To Share</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">100</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">States</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Apartments</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Show More</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">4</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6 card-border">
+      <p class="adds">1365 Ads</p>
+      <h3><i class="fa fa-car"></i>Vehicles</h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#">Motor Bikes</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Cars</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">CarParts</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">100</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Rent a Car</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Wanted</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Show More</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">4</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6 card-border">
+      <p class="adds">1365 Ads</p>
+      <h3><i class="fa fa-business-time"></i>Jobs</h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#">Cafe</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Fast Food</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Resturants</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">100</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Pubs</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Food Truck</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Show More</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-6 card-border">
+      <p class="adds">1365 Ads</p>
+      <h3><i class="fa fa-star"></i>Services</h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#">Cafe</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Fast Food</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Resturants</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">100</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Pubs</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Food Truck</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Show More</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">4</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6 card-border">
+      <p class="adds">1365 Ads</p>
+      <h3><i class="fa fa-paw"></i>Pets</h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#">Cafe</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Fast Food</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Resturants</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">100</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Pubs</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Food Truck</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Show More</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">4</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6 card-border">
+      <p class="adds">1365 Ads</p>
+      <h3><i class="fa fa-shopping-cart"></i>Shopping</h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#">Cafe</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Fast Food</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Resturants</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">100</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Pubs</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Food Truck</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Show More</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">4</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6 card-border">
+      <p class="adds">1365 Ads</p>
+      <h3><i class="fa fa-hotel"></i>Hotels</h3>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#">Cafe</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Fast Food</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Resturants</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">100</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Pubs</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">155</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Food Truck</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">255</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#">Show More</a>
+        </div>
+        <div class="col-xs-6">
+          <p class="text-right">4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="bs-example container-fluid ftr">
+    <div class="footer">
+      <div class="row text-center">
+        <div class="col-md-12 icons">
+          <a class="icon-list" href="#"><i class="fab fa-facebook-square fb"></i></a>
+          <a class="icon-list" href="#"><i class="fab fa-twitter-square tw"></i></a>
+          <a class="icon-list" href="#"><i class="fab fa-youtube-square yb"></i></a>
+          <a class="icon-list" href="#"><i class="fas fa-rss-square rss"></i></a>
+        </div>
+      </div>
+
+      <div class="row" style="color: #fff;">
+        <div class="col-md-4 col-sm-4 col-xs-4"><h3>Brand Name</h3><br>
+          <img src="brandLogo" alt="BrandLogo" style="width:100%">
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4"><h3>Categories</h3><br>
+          <div class="row">
+            <div class="col-md-6 col-ms-3">
+              <h5>Cars <a href="#">225</a></h5>
+            </div>
+            <div class="col-md-6 col-ms-3">
+              <h5>Laptops <a href="#">225</a></h5>
+            </div>
+            <div class="col-md-6 col-ms-3">
+              <h5>Jobs <a href="#">225</a></h5>
+            </div>
+            <div class="col-md-6 col-ms-3">
+              <h5>Properties <a href="#">225</a></h5>
+            </div>
+            <div class="col-md-6 col-ms-3">
+              <h5>Books <a href="#">225</a></h5>
+            </div>
+            <div class="col-md-6 col-ms-3">
+              <h5>Mobiles <a href="#">225</a></h5>
+            </div>
+            <div class="col-md-6 col-ms-3">
+              <h5>Computers <a href="#">225</a></h5>
+            </div>
+            <div class="col-md-6 col-ms-3">
+              <h5>Hotels <a href="#">225</a></h5>
+            </div>
+            <div class="col-md-6 col-ms-3">
+              <h5>Pets <a href="#">225</a></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-4"><h3>Quick Links</h3><br>
+          <div class="row">
+            <div class="col-md-6 col-ms-6">
+              <a href="#">Home</a>
+            </div>
+            <div class="col-md-6 col-ms-6">
+              <a href="#">About</a>
+            </div>
+            <div class="col-md-6 col-ms-6">
+              <a href="#">FAQ</a>
+            </div>
+            <div class="col-md-6 col-ms-6">
+              <a href="#">Contact</a>
+            </div>
+            <div class="col-md-6 col-ms-6">
+              <a href="#">Pricing</a>
+            </div>
+            <div class="col-md-6 col-ms-6">
+              <a href="#">Team</a>
+            </div>
+            <div class="col-md-6 col-ms-6">
+              <a href="#">Advertise with us</a>
+            </div>
+            <div class="col-md-6 col-ms-6">
+              <a href="#">Help</a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <div class="row text-center" style="color: #A9A9A9; margin-top: 20px;">
+      © Copyright 2018 Maju Project Classified.<br> All Rights Reserved
+Made with  by Majuians
+    </div>
+  </div>
+</div>
+
+
+
+
+  </body>
+  </html>
