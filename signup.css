@@ -1,0 +1,76 @@
+h1{
+	margin-top: 70px;
+}
+.form-group{
+	margin-top: 30px;
+	margin-left: 70px;
+	width: 280px;
+}
+.form-control{
+	display: inline-block;
+
+}
+
+form{
+	border: 1px solid #dddddd;
+	margin-top: 70px;
+	margin-left: 500px;
+	margin-right: 80px;
+	width: 420px;
+	border-radius: 20px;
+}
+
+.btn-group{
+	margin-top: 20px;
+	margin-left: 70px;
+
+
+}
+button{
+	
+	margin-right: 100px;
+	margin-left: 120px;
+	width: 280px;
+
+}
+
+.btn-primary{
+	border-radius: 50px;
+	background-color:#663399; 
+
+}
+
+.star1 p{
+	color: red;
+	display: inline;
+}
+.linkhome a{
+	text-decoration: none;
+	color: black;
+} 
+
+.form-check{
+	margin-top: 20px;
+	margin-left:70px;
+}
+
+
+.form-check-input{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+.account{
+	margin-top: 30px;
+	margin-left: 650px;
+
+}
+.account a{
+	color: #663399;
+}
+
+
+.text-primary{
+	color: #663399;
+}

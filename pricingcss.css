@@ -1,0 +1,37 @@
+.text-primary{
+	
+	color: #663399;
+	margin-top: 80px;
+	margin-bottom: 10px;
+}
+.linkhome a{
+	text-decoration: none;
+	color: black;
+}
+.text-primary{
+
+
+}
+
+.list-group
+{
+
+	width: 320px;
+	display: inline-block;
+	margin-left: 100px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.list-group-item button{
+	border-radius: 50px;
+	background-color:#663399;
+}
+
+
+
+
+
+
+
+
+
