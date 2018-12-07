@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdPoint - A Classified Site for Learning</title>
+    <link rel="icon" href="images/icon copy.jpg">
+    <!-- Boostrap StyleSheet -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custome Style Sheet -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav navbar navbar-expand-xl sticky-top">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.JPG" alt="AdPoint" title="AdPoint">
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fa fa-bars border text-white p-3 bg-primary rounded-0"></i>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <a href="setting.html">
+                    <button class="btn btn-outline-primary bg-transparent text-primary my-2 my-lg-0 btn-lg" type="submit">John Doe</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+    <!-- Main Section -->
+    <section id="main-section" class="container-fluid">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Online Selling or Advertising Your Products</h3>
+                    <h5>Now you may sell or buy anything from mobile phones to properties or even jobs</h5>
+                </div>
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input type="search" class="form-control" id="Search" name="Search" placeholder="What are looking for?">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <select id="inputState" class="form-control">
+                            <option selected>Categories</option>
+                            <option>Phone</option>
+                            <option>Laptop</option>
+                            <option>Cars</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <select id="inputState" class="form-control">
+                            <option selected>Locations</option>
+                            <option>Karachi</option>
+                            <option>Islamabad</option>
+                            <option>Lahore</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <button type="submit" class="btn bg-light text-primary pl-3 pr-3"><i class="fa fa-search"></i>Search</button>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="container pt-5 pb-5">
+                        <h2>Popular Categories</h2>
+                        <a href="#"><button type="button" class="btn bg-light text-primary mb-2">Computers</button></a>
+                        <a href="#"><button type="button" class="btn bg-light text-primary mb-2">Laptop</button></a>
+                        <a href="#"><button type="button" class="btn bg-light text-primary mb-2">Cars</button></a>
+                        <a href="#"><button type="button" class="btn bg-light text-primary mb-2">Mobiles</button></a>
+                        <a href="#"><button type="button" class="btn bg-light text-primary mb-2">Books</button></a>
+                        <a href="#"><button type="button" class="btn bg-light text-primary mb-2">Jobs</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Main Section -->
+    <!-- Carousel Section -->
+    <section id="owl-carousel" class="mt-5 mb-5">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <div class="carousel-inner row w-100 mx-auto">
+                    <div class="carousel-item col-md-4 active">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="images/bmw.jpg" alt="Car">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text text-success"><i class="fa fa-user"></i>Added by</p>
+                                <p class="card-text text-white"><span class="bg-primary p-2">Price</span></p>
+                                <p class="card-text text-success"><i class="fa fa-clock"></i>Added on</p>
+                                <p class="card-text text-success"><i class="fa fa-map-marker"></i>Location</p>
+                                <p class="card-text text-success"><i class="fa fa-list-alt"></i>Category</p>
+                                <p class="card-text text-info"><i class="fa fa-info-circle"></i>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="images/laptop.jpg" alt="Laptop">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text text-success"><i class="fa fa-user"></i>Added by</p>
+                                <p class="card-text text-white"><span class="bg-primary p-2">Price</span></p>
+                                <p class="card-text text-success"><i class="fa fa-clock"></i>Added on</p>
+                                <p class="card-text text-success"><i class="fa fa-map-marker"></i>Location</p>
+                                <p class="card-text text-success"><i class="fa fa-list-alt"></i>Category</p>
+                                <p class="card-text text-info"><i class="fa fa-info-circle"></i>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="images/bmw.jpg" alt="Car">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text text-success"><i class="fa fa-user"></i>Added by</p>
+                                <p class="card-text text-white"><span class="bg-primary p-2">Price</span></p>
+                                <p class="card-text text-success"><i class="fa fa-clock"></i>Added on</p>
+                                <p class="card-text text-success"><i class="fa fa-map-marker"></i>Location</p>
+                                <p class="card-text text-success"><i class="fa fa-list-alt"></i>Category</p>
+                                <p class="card-text text-info"><i class="fa fa-info-circle"></i>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="images/bmw.jpg" alt="Car">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text text-success"><i class="fa fa-user"></i>Added by</p>
+                                <p class="card-text text-white"><span class="bg-primary p-2">Price</span></p>
+                                <p class="card-text text-success"><i class="fa fa-clock"></i>Added on</p>
+                                <p class="card-text text-success"><i class="fa fa-map-marker"></i>Location</p>
+                                <p class="card-text text-success"><i class="fa fa-list-alt"></i>Category</p>
+                                <p class="card-text text-info"><i class="fa fa-info-circle"></i>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="images/laptop.jpg" alt="Laptop">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text text-success"><i class="fa fa-user"></i>Added by</p>
+                                <p class="card-text text-white"><span class="bg-primary p-2">Price</span></p>
+                                <p class="card-text text-success"><i class="fa fa-clock"></i>Added on</p>
+                                <p class="card-text text-success"><i class="fa fa-map-marker"></i>Location</p>
+                                <p class="card-text text-success"><i class="fa fa-list-alt"></i>Category</p>
+                                <p class="card-text text-info"><i class="fa fa-info-circle"></i>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="images/bmw.jpg" alt="Car">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text text-success"><i class="fa fa-user"></i>Added by</p>
+                                <p class="card-text text-white"><span class="bg-primary p-2">Price</span></p>
+                                <p class="card-text text-success"><i class="fa fa-clock"></i>Added on</p>
+                                <p class="card-text text-success"><i class="fa fa-map-marker"></i>Location</p>
+                                <p class="card-text text-success"><i class="fa fa-list-alt"></i>Category</p>
+                                <p class="card-text text-info"><i class="fa fa-info-circle"></i>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Carousel Section -->
+    <!-- Categories Section -->
+    <section class="container" id="categories">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-12">
+                <div class="card bg-light">
+                    <div class="card-body p-5">
+                        <p><span>#### Ads</span></p>
+                        <p><i class="fa fa-list bg-primary text-white"></i>Category title</p>
+                        <ul class="list-unstyled float-left">
+                            <li>Cafe</li>
+                            <li>Fast Food</li>
+                            <li>Restaurants</li>
+                            <li>Pubs</li>
+                            <li>Food Truck</li>
+                            <li>Show More</li>
+                        </ul>
+                        <ul class="list-unstyled float-right">
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-12">
+                <div class="card bg-light">
+                    <div class="card-body p-5">
+                        <p><span>#### Ads</span></p>
+                        <p><i class="fa fa-list bg-primary text-white"></i>Category title</p>
+                        <ul class="list-unstyled float-left">
+                            <li>Cafe</li>
+                            <li>Fast Food</li>
+                            <li>Restaurants</li>
+                            <li>Pubs</li>
+                            <li>Food Truck</li>
+                            <li>Show More</li>
+                        </ul>
+                        <ul class="list-unstyled float-right">
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-12">
+                <div class="card bg-light">
+                    <div class="card-body p-5">
+                        <p><span>#### Ads</span></p>
+                        <p><i class="fa fa-list bg-primary text-white"></i>Category title</p>
+                        <ul class="list-unstyled float-left">
+                            <li>Cafe</li>
+                            <li>Fast Food</li>
+                            <li>Restaurants</li>
+                            <li>Pubs</li>
+                            <li>Food Truck</li>
+                            <li>Show More</li>
+                        </ul>
+                        <ul class="list-unstyled float-right">
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-12">
+                <div class="card bg-light">
+                    <div class="card-body p-5">
+                        <p><span>#### Ads</span></p>
+                        <p><i class="fa fa-list bg-primary text-white"></i>Category title</p>
+                        <ul class="list-unstyled float-left">
+                            <li>Cafe</li>
+                            <li>Fast Food</li>
+                            <li>Restaurants</li>
+                            <li>Pubs</li>
+                            <li>Food Truck</li>
+                            <li>Show More</li>
+                        </ul>
+                        <ul class="list-unstyled float-right">
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-12">
+                <div class="card bg-light">
+                    <div class="card-body p-5">
+                        <p><span>#### Ads</span></p>
+                        <p><i class="fa fa-list bg-primary text-white"></i>Category title</p>
+                        <ul class="list-unstyled float-left">
+                            <li>Cafe</li>
+                            <li>Fast Food</li>
+                            <li>Restaurants</li>
+                            <li>Pubs</li>
+                            <li>Food Truck</li>
+                            <li>Show More</li>
+                        </ul>
+                        <ul class="list-unstyled float-right">
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-12">
+                <div class="card bg-light">
+                    <div class="card-body p-5">
+                        <p><span>#### Ads</span></p>
+                        <p><i class="fa fa-list bg-primary text-white"></i>Category title</p>
+                        <ul class="list-unstyled float-left">
+                            <li>Cafe</li>
+                            <li>Fast Food</li>
+                            <li>Restaurants</li>
+                            <li>Pubs</li>
+                            <li>Food Truck</li>
+                            <li>Show More</li>
+                        </ul>
+                        <ul class="list-unstyled float-right">
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 d-lg-none d-xl-block col-sm-6 col-xs-12">
+                <div class="card bg-light">
+                    <div class="card-body p-5">
+                        <p><span>#### Ads</span></p>
+                        <p><i class="fa fa-list bg-primary text-white"></i>Category title</p>
+                        <ul class="list-unstyled float-left">
+                            <li>Cafe</li>
+                            <li>Fast Food</li>
+                            <li>Restaurants</li>
+                            <li>Pubs</li>
+                            <li>Food Truck</li>
+                            <li>Show More</li>
+                        </ul>
+                        <ul class="list-unstyled float-right">
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 d-lg-none d-xl-block col-sm-6 col-xs-12">
+                <div class="card bg-light">
+                    <div class="card-body p-5">
+                        <p><span>#### Ads</span></p>
+                        <p><i class="fa fa-list bg-primary text-white"></i>Category title</p>
+                        <ul class="list-unstyled float-left">
+                            <li>Cafe</li>
+                            <li>Fast Food</li>
+                            <li>Restaurants</li>
+                            <li>Pubs</li>
+                            <li>Food Truck</li>
+                            <li>Show More</li>
+                        </ul>
+                        <ul class="list-unstyled float-right">
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                            <li>25</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Categories Section -->
+    <footer class="bg-light p-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6">
+                    <h3 class="text-primary border-bottom border-success p-2 w-50">about</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam at, expedita nesciunt rem illo dolor, accusantium fuga temporibus nobis, suscipit et id animi ea amet molestias.
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <h3 class="text-primary border-bottom border-success p-2 w-50">categories</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="">Category</a></li>
+                                <li><a href="">Category</a></li>
+                                <li><a href="">Category</a></li>
+                                <li><a href="">Category</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="">Category</a></li>
+                                <li><a href="">Category</a></li>
+                                <li><a href="">Category</a></li>
+                                <li><a href="">Category</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <h3 class="text-primary border-bottom border-success p-2 w-50">social</h3>
+                    <div class="row text-white">
+                        <div class="col-lg-4 col-2">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div class="col-lg-4 col-2">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                        <div class="col-lg-4 col-2">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                        <div class="col-lg-4 col-2">
+                            <i class="fa fa-google-plus"></i>
+                        </div>
+                        <div class="col-lg-4 col-2">
+                            <i class="fa fa-youtube"></i>
+                        </div>
+                        <div class="col-lg-4 col-2">
+                            <i class="fa fa-pinterest"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <h3 class="text-primary border-bottom border-success p-2 w-50">links</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">FAQS</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="">Pricing</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Advertising</a></li>
+                                <li><a href="">Team</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <div class="container-fluid bg-primary">
+        <div class="container p-3 text-white">
+            <p class="float-left"><i class="fa fa-copyright"></i>All Rights Reserved</p>
+            <p class="text-right">Designed and Developed by Students Of MUHAMMAD ALI JINNAH UNIVERSITY</p>
+        </div>
+    </div>
+    <!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- Popper JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+    <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    <script src="js/slider.js"></script>
+    <!-- Slider JQuery -->
+</body>
+
+</html>
