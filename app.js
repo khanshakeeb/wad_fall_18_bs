@@ -7,10 +7,9 @@ const passport = require('passport');
 var session = require('express-session')
 const uuid = require('uuid/v4')
 const FileStore = require('session-file-store')(session);
-//var indexRouter = require('./routes/index');
-//var usersRouter = require('./routes/users');
+const passportConfig = require('./app/config/passport');
 const routes = require('./app/routes.js');
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -33,10 +32,8 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-//app.use('/', indexRouter);
-//app.use('/users', usersRouter);
-routes(app);
+passportConfig(app); // configure passport local strategies
+routes(app,passport);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
