@@ -5,10 +5,11 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const passport = require('passport');
 var session = require('express-session')
-const uuid = require('uuid/v4')
-const FileStore = require('session-file-store')(session);
+//const uuid = require('uuid/v4')
+//const FileStore = require('session-file-store')(session);
 const passportConfig = require('./app/config/passport');
 const routes = require('./app/routes.js');
+const flash    = require('connect-flash');
 const app = express();
 
 // view engine setup
@@ -20,19 +21,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(session({
-  genid: (req) => {
-    return uuid() // use UUIDs for session IDs
-  },
-  secret: 'f83q4fbqwyfo7q38faifbo47f',
-  saveUninitialized: true,
-  resave: false,
-  store: new FileStore(),
-}))
+app.use(session({ secret: 'VEvoDOUi21tuAUU' }));
+
 app.use(passport.initialize());
 app.use(passport.session());
-
-passportConfig(app); // configure passport local strategies
+app.use(flash());
+passportConfig(passport); // configure passport local strategies
 routes(app,passport);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
