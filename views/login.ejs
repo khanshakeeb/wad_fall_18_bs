@@ -1,41 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-	<form action="/login" method="post">
-    <div>
-        <label>Username:</label>
-        <input type="text" name="username"/>
-    </div>
-    <div>
-        <label>Password:</label>
-        <input type="password" name="password"/>
-    </div>
-    <div>
-        <input type="submit" value="Log In"/>
-    </div>
-</form>
-  </body>
-</html>
-
-
-<!DOCTYPE html>
-<html>
 <head>
 	
-<title>Log in</title>
+    <title><%= title %></title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="bootcss.css">
+  <link rel="stylesheet" type="text/css" href="../public/stylesheets/bootcss.css">
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
 
 </head>
 
@@ -60,7 +36,6 @@
         <div>
             <input type="submit" value="Log In"/>
         </div>
-
 
 <div class="btn-group">
     <button type="facebook" class="btn btn-primary "> <b> f </b>     LOGIN WITH FACEBOOK </button>
