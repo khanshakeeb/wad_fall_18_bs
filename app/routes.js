@@ -1,5 +1,5 @@
 const AuthController = require('./controllers/AuthController');
-
+const SiteConroller = require('./controllers/SiteController');
 module.exports = function (app, passport) {
 	app.get('/login', AuthController.login);
 	app.get('/dashboard', _authenticationMiddleware , AuthController.dashboard);
@@ -9,6 +9,7 @@ module.exports = function (app, passport) {
 		failureFlash : true // allow flash messages
 	}));
 
+app.get('/', SiteConroller.index);
 
 	// (req, res, next) => {
 	// 	passport.authenticate('local', (err, user, info) => {
