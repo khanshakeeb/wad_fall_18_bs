@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ClassifiedSite</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style type="text/css">
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: white;
+        color: black;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: black;
+        color: white;
+    }
+    #con{
+        background: url(https://hdqwalls.com/wallpapers/simple-background-2.jpg);
+        text-align: center;
+        padding: 5%;
+        color: white;
+
+    }
+   /* div{
+        border:black 2px solid;
+    }*/
+
+    .rounded{
+        border-radius: 25px;
+        margin-top:  10px ;
+        padding: 30px;
+
+
+    }
+    .row{
+        margin: 50px;
+    }
+
+</style>
+</head>
+<body>
+    <div id="main">
+    <div id="con">
+        <h1>Contact Us</h1>
+        <p><a href="#" style="color: white">Home</a> > Contact</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 rounded" style="border: #FAEBD7 2px solid">
+                <h2>Contact Us</h2>
+                <form action="/action_page.php">
+                    <label for="name box">Name</label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+                    <br>
+                    <label for="subject box">Subject</label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <br>
+                    <label for="message">Message</label><br>
+                    <textarea id="msg" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="col-md-1">
+              
+            </div>
+            <div class="col-md-6 rounded"  style="border: #FAEBD7 2px solid">
+                <h2>Get In Contact</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis incidunt doloremque tempore facere
+                    quas,veniam perspiciatis reiciendis molestias ab enim debitis nesciunt sed, ullam tempora repudiandae
+                voluptas voluptatem similique sapiente.</p>
+                <hr>
+                <h4>Bootstrap  <b>Classified</b></h4>
+                <p><i class="fas fa-envelope-square"></i><b>  Email:</b><a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">www.gmail.com</a></p>
+                <p><i class="fas fa-phone"></i><b>  Phone No.</b> (123) 456-789</p>
+                <p><i class="fas fa-map-marker-alt"></i><b>  Address:</b> 1234 Street Name, City Name, United States</p>
+                <hr>
+                <h4>Business <b>Hours</b></h4>
+                <p><i class="far fa-clock"></i> Monday - Friday - 9am to 5pm</p>
+                <p><i class="far fa-clock"></i> Saturday - 9am to 2pm</p>
+                <p><i class="far fa-clock"></i> Sunday - Closed</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

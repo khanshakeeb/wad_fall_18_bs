@@ -1,0 +1,9 @@
+var path = require('path');
+/**
+* I have override default folder to app folder
+*/
+module.exports = {
+  'config': path.resolve('app/config', 'database.json'),
+  'migrations-path': path.resolve('./', 'migrations'),
+  'models-path': path.resolve('app', 'models')
+}

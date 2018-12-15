@@ -1,0 +1,40 @@
+//to clone repo using command
+
+git clone https://github.com/khanshakeeb/wad_fall_18_bs.git
+
+//to how much branches we have
+
+git branch
+
+//list 
+
+ls -l
+
+//get fresh git head
+
+git fetch
+
+//it show the status (commit)
+
+git status
+
+//git for stage
+
+git add (file name)
+
+//git commit
+
+git commit -m "some commits"
+
+//to push you code -- origin that address from we clone code
+
+git push origin master
+
+//get changes 
+
+git pull origin master
+
+//git unstage the changes
+
+git checkout filename
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Bug Report</title>
+    <!-- Bootstrap's CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/settings.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/latest/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/latest/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* ul.navbar-nav li{ */
+    display: flex;
+  }
+</style>
+</head>
+
+<body>
+    <ul class="breadcrumb">
+        <li><a href="#"><p><i class="fa fa-home"></i>Home</p></a></li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Profile Settiing</a></li>
+    </ul>
+    <!--  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="panel">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/images/user-imge.png" alt="Card image" style="width:100%">
+                        <div class="card-body">                            
+                                <a href=""><p><i class="fa fa-pencil">My adds</i></p> </a>
+                                <a href=""><p><i class="fa fa-heart">favourite adds</i></p> </a>
+                                <a href=""><p><i class="fa fa-gear">Setting</i></p> </a>
+                                <a href=""><p><i class="fa fa-power-off">Log out</i></p> </a>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="start">
+                        <form name="addrecord" id="addrecord" action="" method="POST" role="form" class="elegant-aero">
+                            <h1>My Account <span>Please fill all the texts in the fields.</span></h1>
+                            <ul class="list-inline">
+                                <li><label><span>User Name :</span>
+                                        <input id="name" type="text" name="name" placeholder="User Name" required />
+                                    </label></li>
+                                <label><span>Email Address :</span>
+                                    <input id="email" type="email" name="email" placeholder="Valid Email Address" required />
+                                </label>
+                                <li> <label><span>First Name :</span>
+                                        <input id="name" type="text" name="name" placeholder="Enter First Name" required />
+                                    </label></li>
+                                <li> <label><span>Last Name :</span>
+                                        <input id="lastname" type="text" name="email" placeholder="Enter Last Name" required />
+                                    </label></li>
+                                <li><label><span>Password:</span>
+                                        <input type="password" name="password" placeholder="Enter password" required />
+                                    </label></li>
+                                <li> <label><span>Cnfirm Password:</span>
+                                        <input type="password" name="password" placeholder="ReEnter password" required />
+                                    </label></li>
+                                <li class="pull-right"> <button type="Save Changes" class="button">Save Changes</button>
+                                    <button type="Cancel" class="button">Cancel</button></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery and Bootstrap's JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

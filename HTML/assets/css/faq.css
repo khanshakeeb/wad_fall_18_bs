@@ -1,0 +1,12 @@
+.img{
+	background-image: url('../images/breadcumb.jpg');
+	position: relative;
+	opacity: 0.8;
+	z-index: 0;
+	border-bottom: 1px solid #ececec;
+	color: blue;
+}
+.img > h2{
+	font-weight: 400;
+	letter-spacing: 2px;
+}
