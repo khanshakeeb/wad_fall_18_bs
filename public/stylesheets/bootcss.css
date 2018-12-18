@@ -3,12 +3,8 @@ h1{
 }
 .form-group{
 	margin-top: 30px;
-	margin-left: 70px;
+	margin-left: 40px;
 	/* width: 280px; */
-}
-.form-control{
-	display:block;
-
 }
 
 form{
@@ -16,17 +12,13 @@ form{
 	margin-top: 70px;
 	margin-left: auto;
 	margin-right: auto;
-	/* width: 420px; */
+	width: 350px;
 	border-radius: 20px;
 	margin-bottom: 50px;
+	padding-bottom: 25px;
 
 }
 
-.btn form{
-	 margin-top: 20px;
-	margin-left: 1300px;
-	margin-right: 340px; 
-}
 .btn-primary{
   margin-left: 50px;
   margin-right: 50px;
@@ -36,14 +28,14 @@ form{
   /* display:block; */
    
 }
+input[type=submit]{
+	padding: 5px 20px;
+}
 
 .btn-group{
 	display:block;
 	margin-top: 20px;
-	margin-left: 50px; 
-	
-
-
+	margin-left: 50px;
 }
 .btn-danger{
 	border-radius: 50px;
@@ -65,7 +57,7 @@ button{
 }
 
  .form-check-lable a{
-	
+	display: inline-block;
 	margin-left: 39px;
 	text-decoration: none;
 	color: #663399;
@@ -76,12 +68,3 @@ button{
 	color: black;
 	margin-bottom: 30px;
 }
-
-/* .star p{
-	color: red;
-	display: block;
-} */
-
-.text-primary{
-	color: #663399;
-} */
