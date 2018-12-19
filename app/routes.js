@@ -9,7 +9,10 @@ module.exports = function (app, passport) {
 		failureFlash : true // allow flash messages
 	}));
 
-app.get('/', SiteConroller.index);
+	app.get('/', SiteConroller.index);
+	app.get('/contact', SiteConroller.contact);
+	app.get('/faq', SiteConroller.faq);
+
 
 	// (req, res, next) => {
 	// 	passport.authenticate('local', (err, user, info) => {
