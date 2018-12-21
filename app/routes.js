@@ -8,7 +8,8 @@ module.exports = function (app, passport) {
 		failureRedirect : '/login', // redirect back to the signup page if there is an error
 		failureFlash : true // allow flash messages
 	}));
-
+	app.get('/signup', AuthController.signup);
+	app.post('/registration', AuthController.registration);
 	app.get('/', SiteConroller.index);
 	app.get('/contact', SiteConroller.contact);
 	app.get('/faq', SiteConroller.faq);
