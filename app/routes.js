@@ -9,7 +9,7 @@ module.exports = function (app, passport) {
 		failureFlash : true // allow flash messages
 	}));
 	app.get('/signup', AuthController.signup);
-	app.post('/registration', AuthController.registration);
+	app.post('/signup');//implement passport signup strategy
 	app.get('/', SiteConroller.index);
 	app.get('/contact', SiteConroller.contact);
 	app.get('/faq', SiteConroller.faq);

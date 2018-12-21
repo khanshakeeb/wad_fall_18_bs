@@ -11,11 +11,5 @@ module.exports = {
     signup: function (req, res) {
         res.render('signup', { title: 'Signup' });
     },
-    registration: function (req, res) {
-        /**
-         * signup process
-         * redirect users on success
-         * throw error on failure
-         */
-    },
+   
 }
