@@ -1,26 +1,24 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Posts', {
+    return queryInterface.createTable('posts', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      pid: {
-        type: Sequelize.INTEGER
-      },
       status: {
-        type: Sequelize.STRING
-      },
-      uid: {
         type: Sequelize.INTEGER
       },
-      publishedat: {
+      user_id: {
+        type: Sequelize.INTEGER,
+        references: { model: 'users', key: 'id' }
+      },
+      publishedAt: {
         type: Sequelize.DATE
       },
-      deletedat: {
+      deletedAt: {
         type: Sequelize.DATE
       },
       createdAt: {
