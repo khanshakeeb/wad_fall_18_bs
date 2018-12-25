@@ -25,5 +25,12 @@ module.exports = {
       Example:
       return queryInterface.dropTable('users');
     */
+   //queryInterface.removeConstraint(tableName, constraintName)
+   var sequelize = queryInterface.sequelize;
+    return sequelize.transaction(function (t) {
+      var migrations = [];
+      migrations.push(queryInterface.removeConstraint('posts', 'user_id_fkey_constraint_name'));
+      return Promise.all(migrations);
+    });
   }
 };
