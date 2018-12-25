@@ -10,42 +10,7 @@
     
     <!-- Navigation -->
     <nav class="nav navbar navbar-expand-xl sticky-top">
-        <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand" href="">
-              <img src="images/logo.JPG" alt="AdPoint" title="AdPoint">
-            </a>
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <i class="fa fa-bars border text-white p-3 bg-primary rounded-0"></i>
-            </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="categories">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog">Blog</a>
-                    </li>
-                </ul>
-                <a href="setting.html">
-                    <button class="btn btn-outline-primary bg-transparent text-primary my-2 my-lg-0 btn-lg" type="submit">John Doe</button>
-                </a>
-            </div>
-        </div>
+       <% include ./partials/navbar %>
     </nav>
     <!-- End Navigation -->
     <!-- Main Section -->
@@ -400,81 +365,7 @@
     </section>
     <!--End Categories Section -->
     <footer class="bg-light p-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-6">
-                    <h3 class="text-primary border-bottom border-success p-2 w-50">about</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quam at, expedita nesciunt rem illo dolor, accusantium fuga temporibus nobis, suscipit et id animi ea amet molestias.
-                    </p>
-                </div>
-                <div class="col-xl-3 col-lg-6">
-                    <h3 class="text-primary border-bottom border-success p-2 w-50">categories</h3>
-                    <div class="row">
-                        <div class="col-6">
-                            <ul class="list-unstyled">
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="list-unstyled">
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
-                                <li><a href="">Category</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6">
-                    <h3 class="text-primary border-bottom border-success p-2 w-50">social</h3>
-                    <div class="row text-white">
-                        <div class="col-lg-4 col-2">
-                            <i class="fa fa-facebook"></i>
-                        </div>
-                        <div class="col-lg-4 col-2">
-                            <i class="fa fa-twitter"></i>
-                        </div>
-                        <div class="col-lg-4 col-2">
-                            <i class="fa fa-instagram"></i>
-                        </div>
-                        <div class="col-lg-4 col-2">
-                            <i class="fa fa-google-plus"></i>
-                        </div>
-                        <div class="col-lg-4 col-2">
-                            <i class="fa fa-youtube"></i>
-                        </div>
-                        <div class="col-lg-4 col-2">
-                            <i class="fa fa-pinterest"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6">
-                    <h3 class="text-primary border-bottom border-success p-2 w-50">links</h3>
-                    <div class="row">
-                        <div class="col-6">
-                            <ul class="list-unstyled">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Careers</a></li>
-                                <li><a href="">FAQS</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="list-unstyled">
-                                <li><a href="">Pricing</a></li>
-                                <li><a href="">Contact</a></li>
-                                <li><a href="">Advertising</a></li>
-                                <li><a href="">Team</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       <% include ./partials/footer %>
     </footer>
     <!-- End Footer -->
     <div class="container-fluid bg-primary">
@@ -483,16 +374,7 @@
             <p class="text-right">Designed and Developed by Students Of MUHAMMAD ALI JINNAH UNIVERSITY</p>
         </div>
     </div>
-    <!-- jQuery library -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <!-- Popper JS -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
-    <!-- Latest compiled JavaScript -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
-    <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
-    <script src="js/slider.js"></script>
-    <!-- Slider JQuery -->
+  <% include ./partials/scripts %>
 </body>
 
 </html>
