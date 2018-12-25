@@ -5,7 +5,7 @@ const Models = require('../models/index');
 const saltRounds = 10
 const myPlaintextPassword = '123456'
 const salt = bcrypt.genSaltSync(saltRounds)
-//const passwordHash = bcrypt.hashSync(myPlaintextPassword, salt)
+const passwordHash = bcrypt.hashSync(myPlaintextPassword, salt)
 const user = {
 	email: 'muhammadbinnaeem@game.com',
 	passwordHash,
