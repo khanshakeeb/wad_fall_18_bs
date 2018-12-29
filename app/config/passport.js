@@ -48,8 +48,10 @@ module.exports = function (passport) {
     function(req, email, password, done) {
         process.nextTick(function() {
         Models.users.findOne({where: {email: email}}).then(function(user){
-            if(user.length > 0) return done(null, false, req.flash('signupMessage', 'That email is already taken.'));
+            console.log(user);
+            if(user) return done(null, false, req.flash('signupMessage', 'That email is already taken.'));
             const data = req.body;
+            console.log(user,req.body);
             data.password = bcrypt.hashSync(password, salt);
             console.log("user data request body", data);
              Models.users.create(data).then(function(result){

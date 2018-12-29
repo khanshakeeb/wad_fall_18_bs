@@ -16,6 +16,7 @@ module.exports = function (app, passport) {
     }));//implement passport signup strategy
 	app.get('/', SiteConroller.index);
 	app.get('/contact', SiteConroller.contact);
+	app.post('/contact', SiteConroller.contact);
 	app.get('/faq', SiteConroller.faq);
 	// Endpoint to logout
 	app.get('/logout', function (req, res) {
