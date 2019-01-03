@@ -14,10 +14,10 @@ module.exports = function (app, passport) {
         failureRedirect : '/signup', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
     }));//implement passport signup strategy
-	app.get('/', SiteConroller.index);
-	app.get('/contact', SiteConroller.contact);
-	app.post('/contact', SiteConroller.contact);
-	app.get('/faq', SiteConroller.faq);
+	 app.get('/', SiteConroller.index);
+	 app.get('/contact', SiteConroller.contact);
+	 app.post('/contact', SiteConroller.contact);
+	 app.get('/faq', SiteConroller.faq);
 	// Endpoint to logout
 	app.get('/logout', function (req, res) {
 		req.logout();
